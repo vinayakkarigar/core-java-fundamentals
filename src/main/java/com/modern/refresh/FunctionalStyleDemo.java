@@ -44,8 +44,6 @@ public class FunctionalStyleDemo {
         if (list.size() == 1) {
             return List.of(list);
         }
-
-
         List<List<T>> result = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             final T t = list.get(i);
@@ -60,11 +58,8 @@ public class FunctionalStyleDemo {
         return result;
     }
 
-
-
-
     public static void main(String[] args) {
-        final List<Integer> integers = Arrays.asList(1, 2, 4, 9);
+        final List<Integer> integers = Arrays.asList(1, 2, 4, 9, 5, 8,3, 6);
 //        final List<List<Integer>> subsets = subsets(integers);
 //        System.out.println(subsets);
 //        subsets.stream()
