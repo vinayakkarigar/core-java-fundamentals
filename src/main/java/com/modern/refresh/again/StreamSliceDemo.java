@@ -50,7 +50,8 @@ public class StreamSliceDemo {
         System.out.println(dishNameLengths);
 
         System.out.println(">>>>> Flattening the streams");
-
+        List<String> characters = words.stream().map(s -> s.split("")).flatMap(Arrays::stream).distinct().collect(toList());
+        System.out.println(characters);
 
     }
 
